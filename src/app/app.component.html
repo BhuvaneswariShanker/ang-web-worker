@@ -333,4 +333,17 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+
+<div class="form-input">
+  <input
+    id="factorial-input"
+    name="factorial-input"
+    type="number"
+    [(ngModel)]="factorialInput"
+    
+  />
+  <button id="submit" (click)="calculateFactorial()">Calculate Factorial</button>
+</div>
+<div class="factorial-response">The response is {{ factorialResult }}</div>
+
 <router-outlet />
